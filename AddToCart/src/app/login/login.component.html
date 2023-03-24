@@ -1,1 +1,29 @@
-<p>login works!</p>
+<!-- Login Screen.
+- Create a login screen. 
+- You need to put email and pass the field in form + validation. (Use reactive form)
+- (login data store in JSON SERVER) -->
+
+<!-- testing Angular Material -->
+<!-- <mat-slide-toggle>Toggle me!</mat-slide-toggle> -->
+<div>
+<form>
+
+    <!-- Email -->
+    <div class="example-container">
+        <mat-form-field appearance="fill">
+          <mat-label>Enter your email</mat-label>
+          <input matInput placeholder="xyz@example.com" [formControl]="email" required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+      </div>
+
+      <!-- Password -->
+
+</form>
+<div>
+<p>Entered values</p>
+<p>{{email}}  </p>
+</div>
+
+
+</div>
